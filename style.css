@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    background-image: url('images/potrait.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+html{
+    height: 100%;
+}
+
+.wrapper{
+    padding-top: 10px;
+    background-image: url('images/javascript-with-laptop-code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+/* Header*/
+
+header nav ul{
+display: flex;
+text-align: right;
+
+}
+
+header nav ul li{
+    list-style-type: none;  
+}
+
+header nav ul li:first-child{
+    flex:1;
+}
+
+header nav ul li:nth-child(3){
+    margin-right: 50px;
+}
+
+header nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: lawngreen;
+    text-decoration-thickness: 5px;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-color: lawngreen;
+    text-decoration-thickness: 5px;
+}
+
+#my_name, #job_title{
+text-align: center;
+color: #fff;
+}
+
+/* Main content */
+
+#projects_button{
+    color: #000;
+    font-weight: 500;
+    margin-left: 44%;
+}
+
+#projects_button:hover{
+    font-size: 20px;
+    margin-left: 43%;
+}
+
+main{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projects{
+    width: 400px;
+    background-color: beige;
+    border: 1px solid white;
+    margin: 0px 0px 10px 0px;
+}
+
+.projects:hover{
+    opacity: 0.8;
+}
+
+#project_links a:first-child{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#project_links a:first-child:hover{
+    border: 1px solid black;
+}
+
+#project_links a:last-child{
+    text-decoration: none;
+    color: white;
+    background-color: maroon;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#project_links a:last-child:hover{
+    border: 1px solid white;
+}
+
+figcaption h2{
+    text-align: center;
+}
+
+.description{
+    text-align: justify;
+    margin: 0 10px 0 10px;
+}
+
+figcaption h3{
+    text-align: center;
+}
+
+.skills{
+    font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+#project_links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    position: fixed;
+    opacity: 0.8;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+}
+
+footer a, footer p{
+    color: #fff;
+}
+
+footer p{
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px){
+    .wrapper{
+        background-position: right;
+    }
+
+     #projects_button{
+        margin-left: 40%;
+    }
+
+    #projects_button:hover{
+        margin-left: 37%;
+    }
+
+    #job_title{
+        color: green;
+        font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif; 
+        font-size: 25px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 425px){
+    .wrapper{
+        background-position: right;
+    }
+
+    #my_name{
+        font-size: 20px;
+    }
+
+    #job_title{
+        color: green;
+        font-size: 25px;
+    
+        text-align: center;
+        margin-top: -15px;
+        font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif; 
+    }
+
+    
+        
+
+    #projects_button{
+        margin-left: 30%;
+    }
+
+    #projects_button:hover{
+        margin-left: 29%;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    header nav ul li a{
+        font-size: 17px;
+    }
+
+    .description{
+        width: 315px;
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    body{
+        background-position: right;
+    }
+
+    #projects_button{
+        margin-left: 30%;
+    }
+
+    #projects_button:hover{
+        margin-left: 26%;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+    #projects_button{
+        margin-left: 30%;
+    }
+
+    #projects_button:hover{
+        margin-left: 22%;
+    }
+
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .description{
+        width: 315px;
+        font-size: 14px;
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+    body{
+        background-position: top;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+}

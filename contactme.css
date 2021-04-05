@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+    background-image: url('images/laptop-on-desk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+    height: 100%;
+}
+
+/* Header*/
+
+header nav ul{
+    display: flex;
+    text-align: right;
+    
+    }
+    
+    header nav ul li{
+        list-style-type: none;  
+    }
+    
+    header nav ul li:first-child{
+        flex:1;
+    }
+    
+    header nav ul li:nth-child(3){
+        margin-right: 50px;
+    }
+    
+    header nav ul li a{
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+    header nav ul li a:hover{
+        text-decoration: underline;
+        text-decoration-color: lawngreen;
+        text-decoration-thickness: 5px;
+    }
+    
+    .active{
+        text-decoration: underline;
+        text-decoration-color: lawngreen;
+        text-decoration-thickness: 5px;
+    }
+    
+    #my_name, #job_title{
+    text-align: center;
+    color: #fff;
+    }
+    
+    /* Main content */
+
+    main{
+        width: 47%;
+        height: 30%; 
+    }
+
+    main h2{
+        color: gray;
+        text-align: center;
+        font-family:  Aclonica, 'Times New Roman', Times, serif;
+    }
+
+    article{
+        border: 3px solid silver;
+        border-radius: 100%;
+        width: 90%;
+        margin-left: 4%;
+    
+    }
+
+    article p:last-child{
+        margin-bottom: 60px;
+    }
+
+    address{
+        margin-top: 10px;
+    }
+
+    article > p, article address{
+       text-align: center;
+    }
+
+    article a{
+        text-decoration: none;
+        color: blue;
+    }
+
+    /*Footer*/
+
+footer{
+    display: flex;
+    position: fixed;
+    opacity: 0.8;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+}
+
+footer a, footer p{
+    color: #fff;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 375px){
+    header nav ul li a{
+        font-size: 17px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    main{
+        width: 80%;
+        height: 30%; 
+    }
+
+    article a{
+        font-size: 13px;
+    }
+
+
+    address{
+        margin-top: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    main{
+        width: 80%;
+        height: 30%; 
+    }
+
+    article a{
+        font-size: 13px;
+    }
+
+
+    address{
+        margin-top: 14px;
+    }
+
+}

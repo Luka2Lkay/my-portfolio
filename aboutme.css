@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+/* Header*/
+
+header nav ul{
+    display: flex;
+    text-align: right;
+    
+    }
+    
+    header nav ul li{
+        list-style-type: none;  
+    }
+    
+    header nav ul li:first-child{
+        flex:1;
+    }
+    
+    header nav ul li:nth-child(3){
+        margin-right: 50px;
+    }
+    
+    
+    header nav ul li a{
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+    header nav ul li a:hover{
+        text-decoration: underline;
+        text-decoration-color: lawngreen;
+        text-decoration-thickness: 5px;
+    }
+    
+    .active{
+        text-decoration: underline;
+        text-decoration-color: lawngreen;
+        text-decoration-thickness: 5px;
+    }
+    
+    main{
+        position: relative;
+        width: 100%;
+        height: 1000px;
+       
+}
+
+.wrapper{
+        padding-top: 10px;
+        background-image: url('images/working-at-night.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+}
+
+    article{
+        border: 2px solid white;
+        position: absolute;
+        right: 100px;
+        top: 110px;
+        width: 50%;
+    }
+
+    article h2{
+        font-family: Aclonica, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 40px;
+        color:white;
+    }
+
+    article p{
+        color:white;
+        font-size: 18px;
+        margin: 0px 10px 0px 10px;
+    }
+
+/*Footer*/
+footer{
+    display: flex;
+    position: fixed;
+    opacity: 0.8;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+}
+
+footer a, footer p{
+    
+    color: #fff;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px){
+    article{
+        top: 50px;
+        width: 50%;
+        left: 70px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    article h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    header nav ul li a{
+        font-size: 17px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    main{
+        width: 80%;
+        margin-left: 35px;
+    }
+    article{
+        top: 20px;
+        width: 80%;
+        left: 20px;
+        height: auto;
+    }
+
+    article p{
+        font-size: 16px;
+    }
+
+    article h2{
+        font-size: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    main{
+        width: 80%;
+        margin-left: 35px;
+    }
+    article{
+        top: 20px;
+        width: 80%;
+        left: 20px;
+        height: auto;
+    }
+
+    article p{
+        font-size: 16px;
+    }
+
+    article h2{
+        font-size: 16px;
+    }
+
+}
