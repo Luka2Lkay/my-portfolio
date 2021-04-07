@@ -60,7 +60,6 @@ header nav ul{
         background-image: url('images/working-at-night.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        object-fit: cover;
 }
 
     article{
@@ -80,6 +79,7 @@ header nav ul{
 
     article p{
         color:white;
+        line-height: 1.5em;
         font-size: 18px;
         margin: 0px 10px 0px 10px;
     }

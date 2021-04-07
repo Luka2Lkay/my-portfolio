@@ -14,11 +14,7 @@ html{
 
 .wrapper{
     padding-top: 10px;
-    background-image: url('images/javascript-with-laptop-code.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-    
 /* Header*/
 
 header nav ul{
@@ -69,6 +65,7 @@ color: #fff;
     color: #000;
     font-weight: 500;
     margin-left: 44%;
+    margin-bottom: 20px;
 }
 
 #projects_button:hover{
