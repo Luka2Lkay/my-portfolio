@@ -2,14 +2,15 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
     background-position: center;
     background-image: url('images/laptop-on-desk.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-html{
     height: 100%;
+
 }
 
 /* Header*/
@@ -70,7 +71,6 @@ header nav ul{
     }
 
     article{
-        border-radius: 100%;
         width: 90%;
         margin-left: 4%;
     
@@ -113,6 +113,15 @@ footer a, footer p{
 
 footer p{
     font-size: 18px;
+}
+
+@media only screen and (max-width: 768px){
+    main h2{
+        margin-top: 60px;
+    }
+    article{
+        width: 500px;
+    }
 }
 
 @media only screen and (max-width: 375px){
