@@ -76,7 +76,7 @@ color: #fff;
 main{
     display: none;
     margin-top: 10px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     height: auto;
 }
 
@@ -210,9 +210,6 @@ footer p{
         margin-top: -15px;
         font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif; 
     }
-
-    
-        
 
     #projects_button{
         margin-left: 30%;
