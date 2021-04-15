@@ -6,8 +6,9 @@ body{
 
 html{
     background-position: center;
-    background-image: url('images/laptop-on-desk.jpg');
+    background-image: url('images/red-mouse-computer.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100%;
 
@@ -81,7 +82,7 @@ header nav ul{
     }
 
     address{
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     article > p, article address{

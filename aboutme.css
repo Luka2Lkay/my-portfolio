@@ -8,6 +8,7 @@ html{
     background-image: url('images/working-at-night.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     height: 100%;
     
@@ -120,6 +121,13 @@ footer p{
     article h2{
         font-size: 20px;
     }
+
+    article{
+        top: 30px;
+        
+    }
+
+    
 
 }
 
