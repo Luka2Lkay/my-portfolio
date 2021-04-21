@@ -257,8 +257,11 @@ footer p{
         margin-left: 22%;
     }
 
+    header{
+        margin-top: 10%;
+    }
     header nav ul li a{
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .description{
@@ -274,6 +277,10 @@ footer p{
 
     footer p{
         font-size: 15px;
+    }
+
+    #my_name{
+        margin-top: 50%;
     }
 
 }
