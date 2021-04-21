@@ -200,10 +200,6 @@ footer p{
         background-position: right;
     }
 
-    #my_name{
-        font-size: 20px;
-    }
-
     #job_title{
         color: green;
         font-size: 25px;
@@ -220,11 +216,20 @@ footer p{
     #projects_button:hover{
         margin-left: 29%;
     }
+
+    #my_name{
+        font-size: 20px;
+        margin-top: 40%;
+    }
+
+    header{
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (max-width: 375px){
     header nav ul li a{
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .description{
@@ -245,7 +250,13 @@ footer p{
         margin-left: 26%;
     }
 
+    #my_name{
+        margin-top: 50%;
+    }
 
+    header{
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (max-width: 320px){
