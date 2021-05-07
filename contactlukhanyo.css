@@ -100,7 +100,6 @@ html{
     .email_style{
         text-decoration: none;
         color: #000;
-    
     }
     /*Footer*/
 
@@ -134,7 +133,7 @@ footer p{
 }
 
 @media only screen and (max-width: 425px){
-    .email p, .phone p{
+    .email_style, .phone p{
         font-size: 18px;
         font-weight: 700;
         color: green;
@@ -146,6 +145,10 @@ footer p{
 
     article{
         flex-direction: column;
+    }
+
+    .email_style{
+        color: green;
     }
 }
 
@@ -167,9 +170,13 @@ footer p{
         font-size: 13px;
     }
 
-    .email p, .phone p{
+    .email_style, .phone p{
         font-size: 18px;
         font-weight: 700;
+    }
+
+    .email_style{
+        color: green;
     }
 
     .fa{
