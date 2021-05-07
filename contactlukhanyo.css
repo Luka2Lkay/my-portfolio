@@ -92,14 +92,15 @@ html{
         font-size: 100px;
     }
 
-    .email p, .phone p{
+    .phone p, .email_style{
         font-size: 22px;
         font-weight: 700;
     }
 
     .email_style{
         text-decoration: none;
-        color: green;
+        color: #000;
+    
     }
     /*Footer*/
 
@@ -229,6 +230,10 @@ footer p{
 
     .nav_list li a{
         font-size: 18px;
+    }
+
+    .email_style{
+        color: green;
     }
 
 }
