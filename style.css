@@ -5,7 +5,7 @@ body{
 }
 
 html{
-    background-image: url('images/potrait.jpg');
+    background-image: url('images/working-at-night.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -152,6 +152,10 @@ figcaption h3{
     flex-wrap: wrap;
 }
 
+#job_title{
+    color: green;
+}
+
 /*Footer*/
 
 footer{
@@ -192,7 +196,10 @@ footer p{
         font-size: 25px;
     }
 
-    
+    #my_name{
+        margin-top: 10%;
+    }
+
 }
 
 @media only screen and (max-width: 425px){
@@ -225,6 +232,10 @@ footer p{
     header{
         margin-top: 10%;
     }
+
+    #my_name{
+        margin-top: 20%;
+    }
 }
 
 @media only screen and (max-width: 375px){
@@ -251,11 +262,15 @@ footer p{
     }
 
     #my_name{
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     header{
         margin-top: 10%;
+    }
+
+    .developer{
+        color:#fff;
     }
 }
 
@@ -291,7 +306,11 @@ footer p{
     }
 
     #my_name{
-        margin-top: 50%;
+        margin-top: 20%;
+    }
+
+    .developer{
+        color:#fff;
     }
 
 }
