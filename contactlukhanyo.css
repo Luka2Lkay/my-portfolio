@@ -16,13 +16,25 @@ html{
 
 /* Header*/
 
-header nav ul{
+.nav_list{
     display: flex;
-    text-align: right;
-    
     }
     
-    header nav ul li{
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .burger_menu{
+        display: none;
+        background-color: transparent;
+        color: #fff;
+        border: 0;
+        font-size: 20px;
+    }
+    
+    .nav_list li{
         list-style-type: none;  
     }
     
@@ -51,11 +63,6 @@ header nav ul{
         text-decoration: underline;
         text-decoration-color: lawngreen;
         text-decoration-thickness: 5px;
-    }
-    
-    #my_name, #job_title{
-    text-align: center;
-    color: #fff;
     }
     
     /* Main content */
@@ -89,6 +96,11 @@ header nav ul{
         font-size: 22px;
         font-weight: 700;
     }
+
+    .email_style{
+        text-decoration: none;
+        color: green;
+    }
     /*Footer*/
 
 footer{
@@ -120,6 +132,22 @@ footer p{
     }
 }
 
+@media only screen and (max-width: 425px){
+    .email p, .phone p{
+        font-size: 18px;
+        font-weight: 700;
+        color: green;
+    }
+
+    .fa{
+        font-size: 50px;
+    }
+
+    article{
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 375px){
     header nav ul li a{
         font-size: 17px;
@@ -138,9 +166,17 @@ footer p{
         font-size: 13px;
     }
 
+    .email p, .phone p{
+        font-size: 18px;
+        font-weight: 700;
+    }
 
-    address{
-        margin-top: 14px;
+    .fa{
+        font-size: 50px;
+    }
+
+    article{
+        flex-direction: column;
     }
 }
 
@@ -168,6 +204,31 @@ footer p{
 
     .email p, .phone p{
         font-size: 20px;
+    }
+
+    .nav_list{
+        display: none;
+        margin-top: -1%;
+        margin-left: -1%;
+    } 
+
+    nav{
+        flex-direction: column;
+        margin-right: 200px;
+    }
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .burger_menu{
+        display: block;
+        margin-left: -50%;
+        margin-top: 20px;
+    }
+
+    .nav_list li a{
+        font-size: 18px;
     }
 
 }

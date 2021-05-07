@@ -1,5 +1,11 @@
 const projectBtn = document.getElementById('projects_button');
 const container = document.querySelector('main');
+const burger = document.querySelector('.burger_menu');
+const navUl = document.querySelector('.nav_list');
+
+burger.addEventListener('click', () =>{
+    navUl.classList.toggle('show');
+})
 
 
 projectBtn.addEventListener('click', e =>{
