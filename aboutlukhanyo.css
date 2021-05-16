@@ -11,12 +11,9 @@ html{
     background-attachment: fixed;
     background-position: center;
     height: 100%;
-    
-   
 }
 
 /* Header*/
-
 .nav_list{
     display: flex;
     justify-content: right;
