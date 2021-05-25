@@ -14,15 +14,16 @@ html{
 }
 
 /* Header*/
-.nav_list{
-    display: flex;
-    justify-content: right;
-    }
+
     
     nav{
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         align-items: center;
+    }
+
+    .nav_list{
+        display: flex;
     }
     
     .burger_menu{
