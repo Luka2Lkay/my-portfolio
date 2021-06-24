@@ -27,14 +27,6 @@ nav{
     align-items: center;
 }
 
-.burger_menu{
-    display: none;
-    background-color: transparent;
-    color: #fff;
-    border: 0;
-    font-size: 20px;
-}
-
 .nav_list li{
     list-style-type: none;  
 }
@@ -93,26 +85,27 @@ main{
 }
 
 img{
-    width: 100%;
+    width: 320px;
+    height: 200px;
 }
 
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .projects{
-    width: 400px;
-    background-color: beige;
-    border: 1px solid white;
     margin: 0px 0px 10px 0px;
-    box-shadow: 0px 0px 15px grey;
+    background-color: white;
+    border-radius: 4px;
     transition: .3s ease box-shadow;
+    padding: 1rem;
+    width: 320px;
 }
 
 .projects:hover{
-    box-shadow: 0px 0px 24px lightgreen;
+    box-shadow: 0px 0px 24px #fff;
 }
 
 #project_links a:first-child{
@@ -165,7 +158,8 @@ figcaption h3{
 }
 
 #job_title{
-    color: green;
+    color: gold;
+    margin-top: 3rem;
 }
 
 /*Footer*/
@@ -180,10 +174,15 @@ footer{
     justify-content: space-evenly;
     background-color: black;
     align-items: center;
+    
 }
 
 footer a, footer p{
     color: #fff;
+}
+
+footer a{
+    font-size: 36px;
 }
 
 footer p{
@@ -203,7 +202,7 @@ footer p{
     }
 
     #job_title{
-        color: green;
+        color: gold;
         font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif; 
         font-size: 25px;
     }
@@ -219,7 +218,7 @@ footer p{
     }
 
     #job_title{
-        color: green;
+        color: gold;
         font-size: 25px;
     
         text-align: center;
@@ -236,17 +235,55 @@ footer p{
     }
 
     #my_name{
-        font-size: 20px;
-        margin-top: 40%;
+        font-size: 25px;
+        margin-top: 0px;
     }
 
     header{
         margin-top: 10%;
     }
 
-    #my_name{
-        margin-top: 20%;
+    .nav_list{
+        display: none;
+        margin-top: -1%;
     }
+    
+     /*Humburger menu */
+
+     nav{
+        flex-direction: column;
+        margin-right: 150px;
+    }
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #burger_menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 1em 0px 1em -2.5rem;
+    }
+    
+    .top_bar, .middle_bar, .bottom_bar{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.5s;
+    }
+
+    .change .top_bar{
+       transform: rotate(-45deg) translate(-10px, 10px);
+    } 
+
+    .change .middle_bar{
+        opacity: 0;
+    }
+
+    .change .bottom_bar{
+        transform: rotate(45deg) translate(2px, 0);
+     } 
 }
 
 @media only screen and (max-width: 375px){
@@ -254,8 +291,21 @@ footer p{
         font-size: 18px;
     }
 
+    img{
+        width: 260px;
+        margin-left: -5px;
+    }
+
+    .projects{
+        width: 250px;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
     .description{
-        width: 315px;
+        width: 200px;
         font-size: 14px;
         margin-left: 30px;
     }
@@ -280,12 +330,69 @@ footer p{
         margin-top: 10%;
     }
 
-    .developer{
-        color:#fff;
+    .nav_list{
+        display: none;
+        margin-top: -1%;
     }
+
+    #job_title{
+        font-size: 20px;
+    }
+
+    /*Humburger menu */
+
+    nav{
+        flex-direction: column;
+        margin-right: 150px;
+    }
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #burger_menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 1em 0px 1em -2.5rem;
+    }
+    
+    .top_bar, .middle_bar, .bottom_bar{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.5s;
+    }
+
+    .change .top_bar{
+       transform: rotate(-45deg) translate(-10px, 10px);
+    } 
+
+    .change .middle_bar{
+        opacity: 0;
+    }
+
+    .change .bottom_bar{
+        transform: rotate(45deg) translate(2px, 0);
+     } 
 }
 
 @media only screen and (max-width: 320px){
+
+    html,body{
+    overflow-x: hidden; 
+    }
+
+    .projects{
+        width: 220px;
+        margin-left: 20px;
+    }
+
+    img{
+        width: 240px;
+        margin-left: -10px;
+    }
+    
     #projects_button{
         margin-left: 30%;
     }
@@ -302,26 +409,21 @@ footer p{
     }
 
     .description{
-        width: 315px;
+        width: 200px;
         font-size: 14px;
-        margin-left: 40px;
-        margin-right: 10px;
+        margin-left: 10px;
     }
 
     body{
         background-position: top;
     }
 
-    footer p{
+    footer p, footer a{
         font-size: 15px;
     }
 
     #my_name{
         margin-top: 20%;
-    }
-
-    .developer{
-        color:#fff;
     }
 
     .nav_list{
@@ -338,9 +440,46 @@ footer p{
         flex-direction: column;
     }  
 
-    .burger_menu{
-        display: block;
-        margin-left: -50%;
-        margin-top: -20%;
+    #job_title{
+        font-size: 15px;
     }
+
+   
+     /*Humburger menu */
+
+     nav{
+        flex-direction: column;
+        margin-right: 150px;
+    }
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #burger_menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 1em 0px 1em -2.5rem;
+    }
+    
+    .top_bar, .middle_bar, .bottom_bar{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.5s;
+    }
+
+    .change .top_bar{
+       transform: rotate(-45deg) translate(-10px, 10px);
+    } 
+
+    .change .middle_bar{
+        opacity: 0;
+    }
+
+    .change .bottom_bar{
+        transform: rotate(45deg) translate(2px, 0);
+     } 
+  
 }
