@@ -45,13 +45,13 @@ header nav ul li a{
     
 header nav ul li a:hover{
     text-decoration: underline;
-    text-decoration-color: lawngreen;
+    text-decoration-color: gold;
     text-decoration-thickness: 5px;
 }
     
 .active{
     text-decoration: underline;
-    text-decoration-color: lawngreen;
+    text-decoration-color: gold;
     text-decoration-thickness: 5px;
 }
     
@@ -123,9 +123,50 @@ footer p{
     }
 
     article{
-        top: 30px;
-        
+        top: 30px;   
     }
+
+     /*Humburger menu */
+     .nav_list{
+        display: none;
+        margin-top: -1%;
+        margin-left: -1%;
+    } 
+
+    nav{
+        flex-direction: column;
+        margin-right: 150px;
+    }
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #burger_menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 1em 0px 1em -2.5rem;
+    }
+    
+    .top_bar, .middle_bar, .bottom_bar{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.5s;
+    }
+
+    .change .top_bar{
+       transform: rotateZ(-45deg) translateY(9px)
+    } 
+
+    .change .middle_bar{
+        opacity: 0;
+    }
+
+    .change .bottom_bar{
+        transform: rotateZ(45deg) translateY(-10px);
+     } 
 }
 
 @media only screen and (max-width: 375px){

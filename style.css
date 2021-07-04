@@ -48,13 +48,13 @@ header nav ul li a{
 
 header nav ul li a:hover{
     text-decoration: underline;
-    text-decoration-color: lawngreen;
+    text-decoration-color: gold;
     text-decoration-thickness: 5px;
 }
 
 .active{
     text-decoration: underline;
-    text-decoration-color: lawngreen;
+    text-decoration-color: gold;
     text-decoration-thickness: 5px;
 }
 
@@ -68,7 +68,7 @@ color: #fff;
 #projects_button{
     color: #000;
     font-weight: 500;
-    margin-left: 44%;
+    margin-left: 45.5%;
     margin-bottom: 20px;
 }
 
@@ -274,16 +274,16 @@ footer p{
     }
 
     .change .top_bar{
-       transform: rotate(-45deg) translate(-10px, 10px);
-    } 
-
-    .change .middle_bar{
-        opacity: 0;
-    }
-
-    .change .bottom_bar{
-        transform: rotate(45deg) translate(2px, 0);
+        transform: rotateZ(-45deg) translateY(9px)
      } 
+ 
+     .change .middle_bar{
+         opacity: 0;
+     }
+ 
+     .change .bottom_bar{
+         transform: rotateZ(45deg) translateY(-10px);
+      } 
 }
 
 @media only screen and (max-width: 375px){
@@ -365,16 +365,16 @@ footer p{
     }
 
     .change .top_bar{
-       transform: rotate(-45deg) translate(-10px, 10px);
-    } 
-
-    .change .middle_bar{
-        opacity: 0;
-    }
-
-    .change .bottom_bar{
-        transform: rotate(45deg) translate(2px, 0);
+        transform: rotateZ(-45deg) translateY(9px)
      } 
+ 
+     .change .middle_bar{
+         opacity: 0;
+     }
+ 
+     .change .bottom_bar{
+         transform: rotateZ(45deg) translateY(-10px);
+      } 
 }
 
 @media only screen and (max-width: 320px){
@@ -471,15 +471,15 @@ footer p{
     }
 
     .change .top_bar{
-       transform: rotate(-45deg) translate(-10px, 10px);
-    } 
-
-    .change .middle_bar{
-        opacity: 0;
-    }
-
-    .change .bottom_bar{
-        transform: rotate(45deg) translate(2px, 0);
+        transform: rotateZ(-45deg) translateY(9px)
      } 
+ 
+     .change .middle_bar{
+         opacity: 0;
+     }
+ 
+     .change .bottom_bar{
+         transform: rotateZ(45deg) translateY(-10px);
+      } 
   
 }
